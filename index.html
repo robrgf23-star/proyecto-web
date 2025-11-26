@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Completa: XML y JSON</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Data Formats</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#xml">XML</a></li>
+                    <li><a href="#json">JSON</a></li>
+                    <li><a href="#comparacion">Comparación</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Sección Hero -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Formatos de Intercambio de Datos</h1>
+                <p>Explora XML y JSON - Las tecnologías fundamentales para el intercambio de información</p>
+                <div class="hero-buttons">
+                    <a href="#xml" class="btn btn-primary">Aprender XML</a>
+                    <a href="#json" class="btn btn-secondary">Aprender JSON</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección XML -->
+        <section id="xml" class="content-section">
+            <div class="container">
+                <article>
+                    <h2>Resumen de XML y su uso</h2>
+                    
+                    <div class="section-info">
+                        <h3>¿Qué es XML?</h3>
+                        <p>El lenguaje de marcado extensible (XML) permite definir y almacenar datos de forma compartible. XML admite el intercambio de información entre sistemas de computación, como sitios web, bases de datos y aplicaciones de terceros.</p>
+                    </div>
+                    
+                    <div class="section-info">
+                        <h3>¿Por qué es importante el XML?</h3>
+                        <p>XML es un lenguaje de marcado que proporciona reglas para definir cualquier dato. A diferencia de otros lenguajes de programación, XML no puede realizar operaciones de computación por sí mismo.</p>
+                        
+                        <div class="code-example">
+                            <h4>Ejemplo de estructura XML:</h4>
+                            <pre><code>&lt;libro&gt;
+    &lt;titulo&gt;Introducción a Amazon Web Services&lt;/titulo&gt;
+    &lt;autor&gt;Mark Wilkins&lt;/autor&gt;
+    &lt;precio&gt;29.99&lt;/precio&gt;
+&lt;/libro&gt;</code></pre>
+                        </div>
+                    </div>
+                    
+                    <div class="section-info">
+                        <h3>Beneficios de usar XML</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <h4>Transacciones Interempresariales</h4>
+                                <p>Facilita el intercambio de información entre empresas de forma automatizada.</p>
+                            </div>
+                            <div class="benefit-card">
+                                <h4>Integridad de Datos</h4>
+                                <p>Permite transferir datos junto con su descripción, evitando pérdida de integridad.</p>
+                            </div>
+                            <div class="benefit-card">
+                                <h4>Búsquedas Eficientes</h4>
+                                <p>Los motores de búsqueda pueden procesar XML de forma más precisa.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-info">
+                        <h3>Ejemplo práctico: Catálogo de libros en XML</h3>
+                        <div class="code-example">
+                            <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;biblioteca&gt;
+    &lt;libro categoria="Tecnologia"&gt;
+        &lt;titulo&gt;Aprendiendo AWS&lt;/titulo&gt;
+        &lt;autor&gt;Maria Gonzalez&lt;/autor&gt;
+        &lt;anio&gt;2023&lt;/anio&gt;
+        &lt;precio moneda="USD"&gt;29.99&lt;/precio&gt;
+    &lt;/libro&gt;
+    &lt;libro categoria="Programacion"&gt;
+        &lt;titulo&gt;XML para Desarrolladores&lt;/titulo&gt;
+        &lt;autor&gt;Carlos Rodriguez&lt;/autor&gt;
+        &lt;anio&gt;2022&lt;/anio&gt;
+        &lt;precio moneda="EUR"&gt;24.50&lt;/precio&gt;
+    &lt;/libro&gt;
+&lt;/biblioteca&gt;</code></pre>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección JSON -->
+        <section id="json" class="content-section">
+            <div class="container">
+                <article>
+                    <h2>Resumen de JSON y su uso</h2>
+                    
+                    <div class="section-info">
+                        <h3>¿Qué es JSON?</h3>
+                        <p>JSON (JavaScript Object Notation) es un formato de intercambio de datos ligero y fácil de leer y escribir para humanos, y fácil de parsear y generar para máquinas. Se basa en un subconjunto del lenguaje JavaScript.</p>
+                    </div>
+                    
+                    <div class="section-info">
+                        <h3>¿Por qué es importante JSON?</h3>
+                        <p>JSON se ha convertido en el formato estándar para APIs web debido a su simplicidad y compatibilidad con la mayoría de lenguajes de programación. Es más ligero que XML y más fácil de procesar.</p>
+                        
+                        <div class="code-example">
+                            <h4>Ejemplo básico de JSON:</h4>
+                            <pre><code>{
+    "libro": {
+        "titulo": "Introducción a Amazon Web Services",
+        "autor": "Mark Wilkins",
+        "precio": 29.99
+    }
+}</code></pre>
+                        </div>
+                    </div>
+                    
+                    <div class="section-info">
+                        <h3>Beneficios de usar JSON</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <h4>Ligero y Eficiente</h4>
+                                <p>Requiere menos caracteres que XML, lo que reduce el tamaño de transferencia.</p>
+                            </div>
+                            <div class="benefit-card">
+                                <h4>Fácil de Leer</h4>
+                                <p>Sintaxis simple y clara que es fácil de entender para humanos.</p>
+                            </div>
+                            <div class="benefit-card">
+                                <h4>Integración Nativa</h4>
+                                <p>Se integra naturalmente con JavaScript y la mayoría de lenguajes modernos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-info">
+                        <h3>Estructura de JSON</h3>
+                        <p>JSON se compone de dos estructuras principales:</p>
+                        <ul>
+                            <li><strong>Objetos:</strong> Colecciones de pares clave-valor entre llaves {}</li>
+                            <li><strong>Arrays:</strong> Listas ordenadas de valores entre corchetes []</li>
+                        </ul>
+                        
+                        <div class="code-example">
+                            <h4>Tipos de datos en JSON:</h4>
+                            <pre><code>{
+    "string": "Texto entre comillas",
+    "number": 42,
+    "boolean": true,
+    "null": null,
+    "array": [1, 2, 3],
+    "objeto": {
+        "clave": "valor"
+    }
+}</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="section-info">
+                        <h3>Aplicaciones de JSON</h3>
+                        <div class="applications-grid">
+                            <div class="app-card">
+                                <h4>APIs Web</h4>
+                                <p>La mayoría de APIs RESTful utilizan JSON como formato de intercambio.</p>
+                            </div>
+                            <div class="app-card">
+                                <h4>Configuración</h4>
+                                <p>Archivos de configuración para aplicaciones y servicios.</p>
+                            </div>
+                            <div class="app-card">
+                                <h4>Almacenamiento</h4>
+                                <p>Base de datos NoSQL como MongoDB utilizan formatos similares a JSON.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-info">
+                        <h3>Ejemplos prácticos de JSON</h3>
+                        
+                        <div class="examples-grid">
+                            <div class="example-card">
+                                <h4>Ejemplo 1: Usuario</h4>
+                                <div class="code-example">
+                                    <pre><code>{
+    "usuario": {
+        "id": 12345,
+        "nombre": "Ana García",
+        "email": "ana@ejemplo.com",
+        "activo": true,
+        "preferencias": {
+            "tema": "oscuro",
+            "idioma": "es"
+        },
+        "roles": ["usuario", "editor"]
+    }
+}</code></pre>
+                                </div>
+                            </div>
+                            
+                            <div class="example-card">
+                                <h4>Ejemplo 2: Productos</h4>
+                                <div class="code-example">
+                                    <pre><code>{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Laptop Gaming",
+            "precio": 999.99,
+            "stock": 15,
+            "categorias": ["tecnologia", "computadoras"],
+            "disponible": true
+        },
+        {
+            "id": 2,
+            "nombre": "Mouse Inalámbrico",
+            "precio": 29.99,
+            "stock": 0,
+            "categorias": ["accesorios"],
+            "disponible": false
+        }
+    ]
+}</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-info">
+                        <h3>JSON en JavaScript</h3>
+                        <p>JavaScript proporciona métodos nativos para trabajar con JSON:</p>
+                        <div class="code-example">
+                            <pre><code>// Convertir objeto a JSON string
+const usuario = {
+    nombre: "Carlos",
+    edad: 30,
+    ciudad: "Madrid"
+};
+
+const jsonString = JSON.stringify(usuario);
+console.log(jsonString);
+// Resultado: '{"nombre":"Carlos","edad":30,"ciudad":"Madrid"}'
+
+// Convertir JSON string a objeto
+const jsonTexto = '{"nombre":"Carlos","edad":30,"ciudad":"Madrid"}';
+const objetoUsuario = JSON.parse(jsonTexto);
+console.log(objetoUsuario.nombre); // Resultado: "Carlos"</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="section-info">
+                        <h3>Validación de JSON</h3>
+                        <p>Es importante validar que un JSON esté bien formado. Algunas reglas clave:</p>
+                        <ul>
+                            <li>Usar comillas dobles para las claves</li>
+                            <li>No permitir comas finales</li>
+                            <li>Los strings deben estar entre comillas dobles</li>
+                        </ul>
+                        
+                        <div class="code-example">
+                            <h4>JSON válido vs inválido:</h4>
+                            <pre><code>// VÁLIDO
+{
+    "nombre": "Juan",
+    "edad": 25
+}
+
+// INVÁLIDO - comas finales
+{
+    "nombre": "Juan",
+    "edad": 25,
+}
+
+// INVÁLIDO - comillas simples
+{
+    'nombre': 'Juan',
+    'edad': 25
+}</code></pre>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Comparación -->
+        <section id="comparacion" class="content-section">
+            <div class="container">
+                <article>
+                    <h2>Comparación: XML vs JSON</h2>
+                    
+                    <div class="comparison-grid">
+                        <div class="comparison-card">
+                            <h3>XML</h3>
+                            <div class="pros-cons">
+                                <div class="pros">
+                                    <h4>Ventajas</h4>
+                                    <ul>
+                                        <li>Estandarización y validación con esquemas</li>
+                                        <li>Mejor para documentos complejos</li>
+                                        <li>Soporte para metadatos y namespaces</li>
+                                        <li>Amplia adopción en entornos empresariales</li>
+                                    </ul>
+                                </div>
+                                <div class="cons">
+                                    <h4>Desventajas</h4>
+                                    <ul>
+                                        <li>Más verboso</li>
+                                        <li>Mayor tamaño de archivo</li>
+                                        <li>Más complejo de parsear</li>
+                                        <li>Curva de aprendizaje más pronunciada</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="comparison-card">
+                            <h3>JSON</h3>
+                            <div class="pros-cons">
+                                <div class="pros">
+                                    <h4>Ventajas</h4>
+                                    <ul>
+                                        <li>Más ligero y menos verboso</li>
+                                        <li>Fácil de leer y escribir</li>
+                                        <li>Parseo nativo en JavaScript</li>
+                                        <li>Mejor rendimiento</li>
+                                    </ul>
+                                </div>
+                                <div class="cons">
+                                    <h4>Desventajas</h4>
+                                    <ul>
+                                        <li>Menos capacidades de validación</li>
+                                        <li>No soporta comentarios</li>
+                                        <li>Menos adecuado para documentos complejos</li>
+                                        <li>Limitado en tipos de datos</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-info">
+                        <h3>Tabla de Comparación Detallada</h3>
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Característica</th>
+                                    <th>XML</th>
+                                    <th>JSON</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tipo de formato</td>
+                                    <td>Lenguaje de marcado</td>
+                                    <td>Notación de objeto</td>
+                                </tr>
+                                <tr>
+                                    <td>Verbosidad</td>
+                                    <td>Alta</td>
+                                    <td>Baja</td>
+                                </tr>
+                                <tr>
+                                    <td>Tamaño de archivo</td>
+                                    <td>Mayor</td>
+                                    <td>Menor</td>
+                                </tr>
+                                <tr>
+                                    <td>Parseo</td>
+                                    <td>Complejo (DOM)</td>
+                                    <td>Simple (objeto nativo)</td>
+                                </tr>
+                                <tr>
+                                    <td>Comentarios</td>
+                                    <td>Sí</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>Esquemas</td>
+                                    <td>XSD, DTD</td>
+                                    <td>JSON Schema</td>
+                                </tr>
+                                <tr>
+                                    <td>Uso en APIs</td>
+                                    <td>Menos común</td>
+                                    <td>Muy común</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="section-info">
+                        <h3>¿Cuándo usar cada uno?</h3>
+                        <div class="use-cases">
+                            <div class="use-case">
+                                <h4>Usa XML cuando:</h4>
+                                <ul>
+                                    <li>Necesites validación estricta con esquemas</li>
+                                    <li>Trabajes con documentos complejos y jerárquicos</li>
+                                    <li>Integres con sistemas empresariales legacy</li>
+                                    <li>Requieras metadatos extensivos</li>
+                                </ul>
+                            </div>
+                            <div class="use-case">
+                                <h4>Usa JSON cuando:</h4>
+                                <ul>
+                                    <li>Desarrolles aplicaciones web modernas</li>
+                                    <li>Priorices el rendimiento y tamaño</li>
+                                    <li>Trabajes con APIs RESTful</li>
+                                    <li>Uses JavaScript en el frontend</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Guía de Formatos de Datos. Todos los derechos reservados.</p>
+            <p>XML y JSON - Tecnologías fundamentales para el desarrollo web moderno</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
